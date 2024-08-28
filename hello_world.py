@@ -21,9 +21,9 @@ __author__ = "Tiago fialho"
 __licence__ = "Unlicense"
 
 # Tudo que estiver dentro do __main__  será o bloco principal de execução
-#if __name__ == "__main__":
+# if __name__ == "__main__":
 #    print("Hello, World!")
-#Atualmente é uma nomemclatura em desuso
+# Atualmente é uma nomemclatura em desuso
 
 import os
 
@@ -32,7 +32,9 @@ msg = "Hello, World!"
 
 # Para testar, mudar no terminal a variavel LANG
 # export LANG=pt_BR.utf8
-# Outra possibilidade
+# Outra possibilidade é passar a variável de ambiente diretamente na chamada
+# da aplicação
+# LANG=pt_BR python hello_world.py
 
 
 if current_language == "pt_BR":
@@ -41,7 +43,7 @@ elif current_language == "it_IT":
     msg = "Ciao, Mondo!"
 elif current_language == "es_SP":
     msg = "Holla, Mundo!"
-elif current_message == "fr_FR":
+elif current_language == "fr_FR":
     msg = "Bonjour Monde"
 
 print(msg)
